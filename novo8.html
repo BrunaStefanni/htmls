@@ -21,6 +21,7 @@
         
             <a href="#introducao">Introdução</a> |
             <a href="#elementos">Elementos Semânticos</a> |
+            <a href="#contato">Contato</a> |
             <a href="#conclusao">Conclusão</a> |
          
         </font>
@@ -30,7 +31,7 @@
     <!-- Conteúdo principal da página -->
     <main>
         <section> <!-- Seção 1: Início -->
-            <h2>Introdução à Semântica HTML5</h2>
+            <h2>1. Introdução à Semântica HTML5</h2>
             <p>O HTML5 introduz uma série de elementos semânticos que ajudam a estruturar o conteúdo da página de forma mais significativa.</p>
             <p>Nesta demonstração, exploraremos alguns desses elementos e como eles podem ser utilizados para melhorar a acessibilidade e a compreensão do conteúdo, como <b>negrito(b)</b> e <i>itálico (i)</i>.</p>
         </section>
@@ -38,7 +39,7 @@
         <hr width="50%" align="left">
 
         <section id="sobre"> <!-- Seção 2: Sobre -->
-            <h2>UC02830 - Elementos Semânticos do HTML5</h2>
+            <h2>2. UC02830 - Elementos Semânticos do HTML5</h2>
             <p>Esta aula prática serve para demonstrar a utilização dos elementos semânticos do HTML5.</p>
             <ul>
                 <li><code>&lt;header&gt;</code>: Define o cabeçalho de uma página ou seção.</li>
@@ -54,7 +55,7 @@
         <hr width="50%" align="left">
 
         <section id="modulos">
-            <h2>Conteúdos e Modularização</h2>
+            <h2>3. Conteúdos e Modularização</h2>
 
             <p>Esta seção aborda os conceitos de conteúdo e modularização em HTML5.</p>
             <hr width="50%" align="left">
@@ -107,6 +108,47 @@
                     </table>
                 </article>
         </section>
+
+        <section id="contacto"> <!-- Seção 4: Contato -->
+            <h2>4. Contato</h2>
+            <p>Para mais informações, preencha o formulário abaixo:</p>
+
+            <!-- Formulário de contato -->
+            <form action="" method="post">
+                <legend><b>Formulário de Contato</b></legend><br>
+                <br>
+
+                <!-- Campo Nome -->
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+                <!-- Campo Email -->
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <!-- Campo Assunto -->
+                <label for="assunto">Assunto:</label><br>
+                <select id="assunto" name="assunto" required>
+                    <option value="">Selecione um assunto</option>
+                    <option value="informacao">Informação</option>
+                    <option value="suporte">Suporte</option>
+                    <option value="outros">Outros</option>
+                </select><br><br>
+
+                <!-- Campo Mensagem (textarea) -->
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="5" cols="42" placeholder="Digite sua mensagem aqui..." required></textarea><br><br>
+
+                <!-- Botões de ação: envio e reset -->
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar Campos">
+            </form>
+        
+
+        </section>
+
+
+
 
     </main>
     
