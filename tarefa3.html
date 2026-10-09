@@ -3,33 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> <!-- TROCAR TÍTULO -->
+    <title>Tarefa 3 - Frontend</title> <!-- TROCAR TÍTULO -->
 </head>
 
 
-<body>
-    <header>
+<body bgcolor="#EAF2F8">
+
+    <header bgcolor="#1F4E79"><!-- CABEÇALHO -->
+
+        <div class="container">
+            <h1 class="logo">O Meu Portefólio</h1>
+            <hr width="100%" align="center" size="3" color="#333333">
+            Trabalhos realizados na UC02833 - Frontend
+
+            <!-- Menu de navegação -->
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre mim</a></li>
+                    <li><a href="#competencias">Competências</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
 
     </header>
+
+    <hr>
     
-    <div>
-        <nav>
-
-        </nav>
-    </div>
-
-    <main>
+    <main ><!-- Conteúdo principal da página -->
         
+        
+        <section id="sobre"> <!-- Seção 1: Sobre mim -->
+            <div class="container">
+                <h2>Bem-vindo ao meu portefólio!</h2>
+
+                    <p>Olá! O meu nome é Bruna Leite. Sou estudante do curso Técnico de Desenvolvimento de Software.</p>
+                    <p>Este portefólio apresenta o meu percurso, as minhas competências e os trabalhos realizados na unidade curricular de Frontend.</p>
+            </div>
+        </section>
+
+        <hr>
+        
+        <section id="competencias"><!-- Competências -->
+            <div class="container">
+                <h2>As minhas competências</h2>
+
+                <div class="cartoes">
+
+                    <article class="cartao">
+                        <h3>HTML</h3>
+                        <p>Criar a estrutura de páginas web.</p>
+                    </article>
+
+                    <article class="cartao">
+                        <h3>SQL</h3>
+                        <p>Gerir bases de dados.</p>
+                    </article>
+
+                    <article class="cartao">
+                        <h3>Trabalho em equipa</h3>
+                        <p>Colaborar e partilhar ideias.</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="projetos"><!-- Projetos -->
+            <div class="container">
+                <h2>Os meus projetos</h2>
+                    <p>Nesta secção apresento alguns dos projetosque desenvolvi durante a minha formação.</p>
+                    
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Nome do projeto</th>
+                            <th>Descrição</th>
+                            <th>Link do projeto</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Primeira Calculadora HTML</td>
+                            <td>Criação de uma Calculadora simples utilizando HTML e um pouco de CSS.</td>
+                            <td><a href="https://github.com/BrunaStefanni/First_Calculator" target="_blank">Ver projeto</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>Banco de dados - SQL</td>
+                            <td>Trabalho realizado na unidade curricular de Escrita de Bases de Dados.</td>
+                            <td><a href="https://github.com/BrunaStefanni/RECURSOS_HUMANOS" target="_blank">Ver projeto</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>Prática em Algoritmos</td>
+                            <td>Pequenos exercícios de algoritmos em Portugol, desenvolvidos durante o curso de software.</td>
+                            <td><a href="https://github.com/BrunaStefanni/Portugol" target="_blank">Ver projeto</a></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="contacto"> <!-- Formulário de Contato -->
+                <h2>Contato</h2>
+                <p>Se quiseres saber mais sobre os meus projetos, preenche o formulário abaixo.</p>
+
+                <form action="" method="post">
+                <fieldset style="width: 40%;">
+                    <legend><b>Formulário de Contato</b></legend><br>
+                    <br>
+
+                    <!-- Campo Nome -->
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" required><br><br>
+
+                    <!-- Campo Email -->
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                 <!-- Campo Assunto -->
+                 <label for="assunto">Assunto:</label><br>
+                    <select id="assunto" name="assunto" required>
+                     <option value="">Selecione</option>
+                     <option value="informacao">Proposta de Trabalhos</option>
+                      <option value="suporte">Envio de Projetos</option>
+                      <option value="outros">Outros</option>
+                 </select><br><br>
+
+                    <!-- Campo Mensagem (textarea) -->
+                 <label for="mensagem">Mensagem:</label><br>
+                    <textarea id="mensagem" name="mensagem" rows="5" cols="42" placeholder="Digite sua mensagem aqui..." required></textarea><br><br>
+
+                    <!-- Botões de ação: envio e reset -->
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar Campos">
+
+                </form>
+                </fieldset>
+        </section>
+
+
 
     </main>
+            
+
+    
+
+    <footer bgcolor="#1F4E79"><!-- RODAPÉ -->
+        <hr width="100%" align="center" size="3" color="#333333">
+        <p align="center">© 2026 Bruna - Todos os direitos reservados.</p>
+    </footer>
 
 
 </body>
 
-
-<footer>
-    <hr width="100%" align="center" size="3" color="#333333">
-    <p align="center">© 2026 - Todos os direitos reservados.</p>
-</footer>
 
 </html>
