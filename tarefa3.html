@@ -6,43 +6,40 @@
     <title>Tarefa 3 - Frontend</title> <!-- TROCAR TÍTULO -->
 </head>
 
-<body bgcolor="#EAF2F8">
+<bodystyle="background-color: lightblue;">
+
 
     <header bgcolor="#1F4E79"><!-- CABEÇALHO -->
-        <div class="container">
 
-        <table>
+        <table width="100%" bgcolor="#1F4E79" cellpadding="10" cellspacing="10">
             <tr>
-                <td>
-                    <img src="imagens/imagens_tarefa2/godfather.jpg" alt="avatar" width="120">
+                <td rowspan="2" width="20%">
+                    <img src="imagens/imagens/imagem_github2.png" alt="avatar" width="150">
                 </td>
                 <td>
-                    <h1>O Meu Portefólio</h1>
-                    <hr width="100%" align="center" size="3" color="#333333">
-                    Trabalhos realizados na UC02833 - Frontend
+                    <h1><font color="#FFFFFF">O Meu Portefólio</font></h1>
+                    <hr width="100%" align="left" size="5" color="#FFFFFF">
+                    <font color="#FFFFFF">Trabalhos realizados na UC02833 - Frontend</font>
                 </td>
             </tr>
+        </table>
 
-            <h1 class="logo">O Meu Portefólio</h1>
-            <hr width="100%" align="center" size="3" color="#333333">
-            Trabalhos realizados na UC02833 - Frontend
+        <hr width="100%" align="center"">
 
             <!-- Menu de navegação -->
-            <nav>
-                <ul>
-                    <li><a href="#sobre">Sobre mim</a></li>
-                    <li><a href="#competencias">Competências</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
+            <nav align="center" bgcolor="#1F4E79">
+                
+                <a href="#sobre">Sobre mim</a></li>
+                <a href="#competencias">Competências</a></li>
+                <a href="#projetos">Projetos</a></li>
+                <a href="#contacto">Contacto</a></li>
+                
             </nav>
-        </div>
-
     </header>
 
     <hr>
     
-    <main ><!-- Conteúdo principal da página -->
+    <main><!-- Conteúdo principal da página -->
         
         
         <section id="sobre"> <!-- Seção 1: Sobre mim -->
@@ -88,7 +85,7 @@
                 <h2>Os meus projetos</h2>
                     <p>Nesta secção apresento alguns dos projetosque desenvolvi durante a minha formação.</p>
                     
-                <table border="1">
+                <table border="1" width="70%" cellpadding="8" cellspacing="10">
                     <thead>
                         <tr>
                             <th>Nome do projeto</th>
@@ -127,9 +124,12 @@
         <section id="contacto"> <!-- Formulário de Contato -->
                 <h2>Contato</h2>
                 <p>Se quiseres saber mais sobre os meus projetos, preenche o formulário abaixo.</p>
+            <table width="60%" cellpadding="10"> 
+                <tr> <!-- Formulário à esquerda --> 
+                <td width="50%" valign="middle"></td>
 
                 <form action="" method="post">
-                <fieldset style="width: 40%;">
+                <fieldset style="width: 50%; background-color: #EAF4FC; border: 2px solid #1F4E79; padding: 15px;">
                     <legend><b>Formulário de Contato</b></legend><br>
                     <br>
 
@@ -142,13 +142,13 @@
                     <input type="email" id="email" name="email" required><br><br>
 
                  <!-- Campo Assunto -->
-                 <label for="assunto">Assunto:</label><br>
+                    <label for="assunto">Assunto:</label><br>
                     <select id="assunto" name="assunto" required>
-                     <option value="">Selecione</option>
-                     <option value="informacao">Proposta de Trabalhos</option>
-                      <option value="suporte">Envio de Projetos</option>
-                      <option value="outros">Outros</option>
-                 </select><br><br>
+                        <option value="">Selecione</option>
+                        <option value="informacao">Proposta de Trabalhos</option>
+                        <option value="suporte">Envio de Projetos</option>
+                        <option value="outros">Outros</option>
+                    </select><br><br>
 
                     <!-- Campo Mensagem (textarea) -->
                  <label for="mensagem">Mensagem:</label><br>
@@ -157,9 +157,18 @@
                     <!-- Botões de ação: envio e reset -->
                     <input type="submit" value="Enviar">
                     <input type="reset" value="Limpar Campos">
-
-                </form>
+                
                 </fieldset>
+                </form>
+
+                </td>
+                    <!-- Imagem do GitHub --> 
+                    <td width="50%" align="center" valign="middle"> 
+                        <img src="imagens/imagens/imagem_github3.jpg" alt="github3" width="80%"> 
+                        <p><b>Vamos partilhar ideias e projetos!</b></p> 
+                    </td> 
+                </tr> 
+            </table>
         </section>
 
 
@@ -169,9 +178,9 @@
 
     
 
-    <footer bgcolor="#1F4E79"><!-- RODAPÉ -->
+    <footer style="background-color: #1F4E79;"><!-- RODAPÉ -->
         <hr width="100%" align="center" size="3" color="#333333">
-        <p align="center">© 2026 Bruna - Todos os direitos reservados.</p>
+        <p align="center" style="color: #FFFFFF;">© 2026 Bruna - Todos os direitos reservados.</p>
     </footer>
 
 
